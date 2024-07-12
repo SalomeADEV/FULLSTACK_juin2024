@@ -1,0 +1,11 @@
+#boite{
+    font-size:14px;
+    transition-property:font-size;
+    transition-duration:4s;
+    transition-delay:2s;
+}
+
+#boite:hover{
+
+    font-size:36px;
+}

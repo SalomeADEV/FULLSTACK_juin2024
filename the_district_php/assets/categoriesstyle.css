@@ -1,0 +1,31 @@
+.background image{
+
+    width: 150vw;
+    height:100vw;
+
+}
+.background {
+
+   background-color: rgb(160, 217, 236)
+
+}
+
+    .categorie{
+
+        width:100px;
+        height:100px;
+    }
+
+    .précédent{
+
+        width:100px;
+        height:70px;
+
+    }
+    .suivant{
+
+        width:100px;
+        height:70px;
+    }
+
+

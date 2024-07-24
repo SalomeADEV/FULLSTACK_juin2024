@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afficher_plat_Categorie</title>
 </head>
-
 <body>
+
+    //Script_plats
 
     <?php
     require_once("header.php");
-    require_once("header.php");
+
 
     $servername = "localhost";
     $username = "admin";

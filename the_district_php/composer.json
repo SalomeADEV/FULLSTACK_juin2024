@@ -1,4 +1,16 @@
 {
+    "name": "jippe/the_district_php",
+    "autoload": {
+        "psr-4": {
+            "Jippe\\TheDistrictPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SalomeADEV",
+            "email": "jippechantal@gmail.com"
+        }
+    ],
     "require": {
         "phpmailer/phpmailer": "^6.9"
     }

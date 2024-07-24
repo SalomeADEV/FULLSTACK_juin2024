@@ -7,9 +7,9 @@
 </head>
 <body>
 
+//Script_categories
 
-
-
+//il manque la catégorie active et la categorie populaire, affichage de 6 plats
         
 <div class ="container">
 
@@ -34,7 +34,7 @@ try {
 
 if($_SERVER['REQUEST_METHOD'] == 'GET' &&  isset($_GET['id']) ) {
     $stmt = $conn->query("SELECT * FROM plat WHERE id_categorie=" . $_GET['id'] .";");
-   
+    $i=0;
     while ($row = $stmt->fetch()) {
 
       echo '<div class="col-md-4">
@@ -49,7 +49,11 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' &&  isset($_GET['id']) ) {
          
         </div>
       </div>
-    </div>';}
+    </div>';
+    if($i==6){
+      break;
+    }
+  $i++;}
 
 }
 ?>

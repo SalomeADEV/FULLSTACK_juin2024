@@ -12,7 +12,7 @@
 
 <!-- ici mon header -->
 
-
+//Présentation des 6 catégories de plats
 
 <?php
 require_once('header.php')

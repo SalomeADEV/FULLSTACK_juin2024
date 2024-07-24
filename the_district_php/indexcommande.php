@@ -7,7 +7,8 @@
     <title>Creation_DB_the_DistrictSQL</title>
 </head>
 <body>
-    
+//Script_commande   
+
 <?php
 require_once("header.php");
 

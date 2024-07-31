@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+
+
 <?php
 require_once('Personnageclass.php');
 require_once('Magasinsclass.php');
-$magasin1 = new Magasins('brico','Amiens','80000','rue plouf');
 
-$p = new Personnage();
+$magasin1 = new Magasins('Brico','Boulevard Arbre,','80000','Amiens','Région Hauts-de-France');
+
+$p=new Personnage();
 $p->setNom("Lebowski");
 $p->setPrenom("Jeff");
 $p->setMagasin($magasin1);
@@ -22,7 +25,7 @@ echo $p->getMagasin()->getNom().'<br>';
 echo $p->getMagasin()->getVille().'<br>';
 echo $p->getMagasin()->getCodepostal().'<br>';
 echo $p->getMagasin()->getAdresse().'<br>';
-
+echo $p->getMagasin()->getRegion(). '<br';
 
 // $date=date_create("2024-07-16",timezone_open("Europe/Paris"));
 // echo date_format($date,"Y/m/d H:iP");

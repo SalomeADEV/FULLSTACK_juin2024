@@ -7,6 +7,8 @@
     <title>Creation_DB_the_DistrictSQL</title>
 </head>
 <body>
+
+
 //Script_commande   
 
 <?php
@@ -51,6 +53,9 @@ $row = $stmt->fetch();
     echo '<img src="assets/img/food/'. $row['image'] .'" alt="'.$row['libelle'].'">';
 
 $stmt->closeCursor();
+
+
+require_once("footer")
 
 ?>
 </body>

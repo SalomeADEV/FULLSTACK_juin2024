@@ -57,14 +57,7 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Categories_populaires</a>
-                        <a class="dropdown-item" href="#">Categories_actives</a>
-                        <a class="dropdown-item" href="#">plats</a>
-                    </div>
-                </li>
+                 </li>
             </ul>
         </div>
     </nav>

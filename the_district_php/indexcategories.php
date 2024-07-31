@@ -7,9 +7,7 @@
 </head>
 <body>
 
-//Script_categories
 
-//il manque la catégorie active et la categorie populaire, affichage de 6 plats
         
 <div class ="container">
 

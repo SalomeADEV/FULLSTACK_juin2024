@@ -7,6 +7,7 @@ require_once("header.php");
 
 require_once 'vendor/autoload.php';
 
+function PHPMailer(){
 
 $mail = new PHPMailer(true);
 $mail->isSMTP();
@@ -23,7 +24,7 @@ $mail->isHTML(true);
 $mail->addAttachment('assets/img/menu-burger.jpg');
 $mail->Subject = 'Test PHPMailer';
 $mail->Body = "Voici le mail de confirmation de votre commande";
-              "Recapitulatif: 1 quantite,libelle.";
+             "Recapitulatif: 1 quantite,libelle.";
 
 if ($mail){
     try {
@@ -33,5 +34,12 @@ if ($mail){
         echo "L'envoi de mail a échoué. L'erreur suivante s'est produite : ", $mail->ErrorInfo;
         }
     } 
+  }
+
 ?>
+
+
+
+
+
 

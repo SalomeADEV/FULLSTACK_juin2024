@@ -23,7 +23,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // configurer le mode d'erreur PDO pour générer des exceptions
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connecté avec succès à la base de données";
+    // echo "Connecté avec succès à la base de données";
 } catch(PDOException $e) {
     echo "Erreur de connexion à la base de données: " . $e->getMessage();
 }
@@ -92,7 +92,9 @@ $result = $stmt->fetchAll();
           foreach($result as $plat){ ?>
             <div class="carousel-item <?php if($i == 0){echo 'active'; $i++;} ?> ">
               <img src="assets/img/food/<?= $plat['image']; ?>" alt="buffalo-chicken" class="d-block w-100">
-              <button type="submit" name="numcommande" value="<?=$plat['id'] ?>" class="btn btn-primary btn-sm">Commander</button>
+              <div class='row justify-content-center'>
+                <button type="submit" name="numcommande" value="<?=$plat['id'] ?>" class="btn btn-primary btn-sm col-4 mt-1">Commander</button>
+              </div>
             </div>
 
         <?php  }; ?>
@@ -187,7 +189,9 @@ $result = $stmt->fetchAll();
 
 
 <?php
+
 $stmt->closeCursor();
+
 ?>
 
           <!-- Left and right controls/icons -->
